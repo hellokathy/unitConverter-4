@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World, TabManager!</string>
+    <string name="app_name">Unit Converter</string>
+	<string name="text_top_line">Convert</string>
+	<string name="text_mid_line">Into</string>
+	<string name="text_from_prompt">From</string>
+	<string name="text_per_line">   Per   </string>	
+	<string name="text_to_prompt">To</string>
+	<string name="text_distance">DISTANCE</string>
+	<string name="text_time">Time</string>
+	<string name="default_input">0.0</string>
+	<string name="default_output">0.0</string>
+	<string name="Go_Button">Convert!</string>
+	<string name="Distance_Button">DISTANCE</string>
+	<string name="Speed_Button">Speed</string>
+	<string name="Fuel_Button">Fuel</string>
+	<string name="Mass_Button">Mass</string>
+	<string name="Exit">Exit</string>
+</resources>

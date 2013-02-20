@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string-array name="conversion_types">
+        <item>Distance</item>
+        <item>Speed</item>
+        <item>Mass</item>
+        <item>Fuel</item>
+    </string-array>
+    
+    <string-array name="distances">
+        <item>Millimetres</item>
+        <item>Centimetres</item>
+        <item>Metres</item>
+        <item>Kilometres</item>
+        <item>Inches</item>
+        <item>Feet</item>
+        <item>Yards</item>
+        <item>Miles</item>
+    </string-array>
+    
+    <string-array name="times">
+        <item>Second</item>
+        <item>Minute</item>
+        <item>Hour</item>
+        <item>Day</item>
+    </string-array>
+    
+    <string-array name="weights">
+        <item>Milligrams</item>
+        <item>Grams</item>
+        <item>Kilograms</item>
+        <item>Ounces</item>
+        <item>Pounds</item>
+        <item>Stone</item>
+    </string-array>
+    
+    <string-array name="fuel_distances">
+        <item>Miles</item>
+        <item>Kilometres</item>
+    </string-array>
+    
+    <string-array name="fuel_used">
+        <item>Litres</item>
+        <item>US Gallons</item>
+        <item>Imperial Gallons</item>
+    </string-array>
+    
+    <string-array name="fuel_conversions">
+        <item>Litres / 100 Kilometres</item>
+        <item>Miles / US Gallons</item>
+        <item>Miles / Imperial Gallons</item>
+    </string-array>
+</resources>

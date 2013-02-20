@@ -1,0 +1,17 @@
+<resources>
+
+    <!--
+        Base application theme for API 14+. This theme completely replaces
+        AppBaseTheme from BOTH res/values/styles.xml and
+        res/values-v11/styles.xml on API 14+ devices.
+    -->
+    <style name="AppTheme" parent="android:Theme.Holo">
+        <item name="android:textAppearance">@style/MyTextAppearance</item>
+    </style>
+
+	<style name="MyTextAppearance" parent="@android:style/TextAppearance">
+    <item name="android:textSize">26sp</item>
+    <item name="android:textColor">#D8E5E5</item>
+    <item name="android:textStyle">bold</item>
+  </style>
+</resources>

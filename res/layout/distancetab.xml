@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:id="@+id/LinearLayout01" 
+	android:layout_width="fill_parent" 
+	android:layout_height="fill_parent">
+	
+	<TextView 
+		android:id="@+id/TextViewTop"
+		android:gravity="center_vertical|center_horizontal"
+		android:layout_height="wrap_content"
+		android:layout_width="fill_parent"
+		android:text="@string/text_top_line"
+		android:textAppearance="@style/MyTextAppearance"
+	/>
+		
+	<Spinner 
+		android:id="@+id/SpinnerFrom"
+		android:layout_width="fill_parent"
+		android:drawSelectorOnTop="true"
+		android:prompt="@string/text_from_prompt" 
+		android:layout_height="wrap_content"
+	/>
+	
+	<TextView 
+		android:id="@+id/TextViewMid"
+		android:gravity="center_vertical|center_horizontal" 
+		android:layout_width="fill_parent" 
+		android:text="@string/text_mid_line"
+		android:layout_height="wrap_content"
+		android:textAppearance="@style/MyTextAppearance"
+	/>
+	
+	<Spinner 
+		android:id="@+id/SpinnerTo"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:drawSelectorOnTop="true"
+		android:prompt="@string/text_to_prompt"
+	/>
+	
+	<EditText 
+		android:id="@+id/TextInput"
+		android:inputType="numberDecimal"
+		android:maxLength="10"
+		android:gravity="center_vertical|center_horizontal"
+		android:layout_height="wrap_content"
+		android:layout_width="fill_parent"
+		android:textAppearance="@style/MyTextAppearance"
+	/>
+	
+	<Button 
+		android:text="@string/Go_Button"
+		android:gravity="center_vertical|center_horizontal"
+		android:id="@+id/Go_Button"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:textAppearance="@style/MyTextAppearance"
+	/>
+	
+	<!--TextView 
+		android:text="@string/default_output"
+		android:gravity="center_vertical|center_horizontal"
+		android:id="@+id/ResultText"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:textAppearance="@style/MyTextAppearance"
+	/-->
+</LinearLayout>
