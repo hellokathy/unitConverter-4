@@ -73,12 +73,13 @@ public final class R {
     }
     public static final class style {
         /** 
-        Base application theme for API 14+. This theme completely replaces
-        AppBaseTheme from BOTH res/values/styles.xml and
-        res/values-v11/styles.xml on API 14+ devices.
-    
+Base application theme for API 14+. This theme completely replaces
+AppBaseTheme from BOTH res/values/styles.xml and
+res/values-v11/styles.xml on API 14+ devices.
+
          */
         public static final int AppTheme=0x7f060000;
+        public static final int LargerTextAppearance=0x7f060002;
         public static final int MyTextAppearance=0x7f060001;
     }
 }

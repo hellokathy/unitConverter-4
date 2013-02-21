@@ -44,4 +44,10 @@
         <item>US Gallons</item>
         <item>Imperial Gallons</item>
     </string-array>
+    
+        <string-array name="fuel_conversions">
+        <item>Litres / 100 Kilometres</item>
+        <item>Miles / US Gallons</item>
+        <item>Miles / Imperial Gallons</item>
+    </string-array>
 </resources>

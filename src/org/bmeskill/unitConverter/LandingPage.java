@@ -57,7 +57,7 @@ public class LandingPage extends ListActivity {
 		AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(this);
 		String message = "This app truncates answers at 8 decimal places!";
 		// set title
-		alertDialogBuilder.setTitle("Warning");
+		alertDialogBuilder.setTitle("Info");
  
 		// set dialog message
 		alertDialogBuilder.setMessage(message).setCancelable(false)
