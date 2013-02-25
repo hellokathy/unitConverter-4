@@ -1,14 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
     style="@style/AppTheme"
     android:orientation="vertical"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent">
 
+    <com.google.ads.AdView android:id="@+id/adView"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginBottom = "20dp"
+		ads:adUnitId="@string/ad_ID"
+		ads:adSize="BANNER"
+		ads:testDevices="@string/test_Devices"
+		ads:loadAdOnCreate="true"/>
     <ListView 
         android:layout_marginBottom = "20dp"
     	android:id="@+id/android:list"
         android:layout_width="fill_parent" 
         android:layout_height="fill_parent" 
     />
+    
 </LinearLayout>

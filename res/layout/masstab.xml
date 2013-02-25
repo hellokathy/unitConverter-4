@@ -1,67 +1,87 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
 	android:orientation="vertical"
 	android:id="@+id/LinearLayout01" 
 	android:layout_width="fill_parent" 
 	android:layout_height="fill_parent">
 	
-	<TextView 
-		android:id="@+id/TextViewTop"
-		android:gravity="center_vertical|center_horizontal"
+    <com.google.ads.AdView android:id="@+id/adView"
+		android:layout_width="wrap_content"
 		android:layout_height="wrap_content"
-		android:layout_width="fill_parent"
-		android:text="@string/text_top_line"
-		android:textAppearance="@style/LargerTextAppearance"
-		android:layout_marginBottom = "20dp"
-	/>
-		
-	<Spinner 
-		android:id="@+id/SpinnerFrom"
-		android:layout_width="fill_parent"
-		android:drawSelectorOnTop="true"
-		android:prompt="@string/text_from_prompt" 
-		android:layout_height="wrap_content"
-		android:layout_marginBottom = "20dp"
-	/>
+		ads:adUnitId="@string/ad_ID"
+		ads:adSize="BANNER"
+		ads:testDevices="@string/test_Devices"
+		ads:loadAdOnCreate="true"/>
 	
-	<TextView 
-		android:id="@+id/TextViewMid"
-		android:gravity="center_vertical|center_horizontal" 
+    <ScrollView
+        android:orientation="vertical"
 		android:layout_width="fill_parent" 
-		android:text="@string/text_mid_line"
-		android:layout_height="wrap_content"
-		android:textAppearance="@style/LargerTextAppearance"
-		android:layout_marginBottom = "20dp"
-	/>
+		android:layout_height="fill_parent">
+    	
+    	<LinearLayout 
+    	    android:orientation="vertical"
+			android:layout_width="fill_parent" 
+			android:layout_height="wrap_content">
 	
-	<Spinner 
-		android:id="@+id/SpinnerTo"
-		android:layout_width="fill_parent"
-		android:layout_height="wrap_content"
-		android:drawSelectorOnTop="true"
-		android:prompt="@string/text_to_prompt"
-		android:layout_marginBottom = "20dp"
-	/>
-	
-	<EditText 
-		android:id="@+id/TextInput"
-		android:inputType="numberDecimal"
-		android:maxLength="10"
-		android:gravity="center_vertical|center_horizontal"
-		android:layout_height="wrap_content"
-		android:layout_width="fill_parent"
-		android:textAppearance="@style/LargerTextAppearance"
-		android:layout_marginBottom = "20dp"
-	/>
-	
-	<Button 
-		android:text="@string/Go_Button"
-		android:gravity="center_vertical|center_horizontal"
-		android:id="@+id/Go_Button"
-		android:layout_width="fill_parent"
-		android:layout_height="wrap_content"
-		android:textAppearance="@style/LargerTextAppearance"
-		android:layout_marginBottom = "20dp"
-	/>
-
+			<TextView 
+				android:id="@+id/TextViewTop"
+				android:gravity="center_vertical|center_horizontal"
+				android:layout_height="wrap_content"
+				android:layout_width="fill_parent"
+				android:text="@string/text_top_line"
+				android:textAppearance="@style/LargerTextAppearance"
+				android:layout_marginBottom = "20dp"
+			/>
+				
+			<Spinner 
+				android:id="@+id/SpinnerFrom"
+				android:layout_width="fill_parent"
+				android:drawSelectorOnTop="true"
+				android:prompt="@string/text_from_prompt" 
+				android:layout_height="wrap_content"
+				android:layout_marginBottom = "20dp"
+			/>
+			
+			<TextView 
+				android:id="@+id/TextViewMid"
+				android:gravity="center_vertical|center_horizontal" 
+				android:layout_width="fill_parent" 
+				android:text="@string/text_mid_line"
+				android:layout_height="wrap_content"
+				android:textAppearance="@style/LargerTextAppearance"
+				android:layout_marginBottom = "20dp"
+			/>
+			
+			<Spinner 
+				android:id="@+id/SpinnerTo"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:drawSelectorOnTop="true"
+				android:prompt="@string/text_to_prompt"
+				android:layout_marginBottom = "20dp"
+			/>
+			
+			<EditText 
+				android:id="@+id/TextInput"
+				android:inputType="numberDecimal"
+				android:maxLength="10"
+				android:gravity="center_vertical|center_horizontal"
+				android:layout_height="wrap_content"
+				android:layout_width="fill_parent"
+				android:textAppearance="@style/LargerTextAppearance"
+				android:layout_marginBottom = "20dp"
+			/>
+			
+			<Button 
+				android:text="@string/Go_Button"
+				android:gravity="center_vertical|center_horizontal"
+				android:id="@+id/Go_Button"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:textAppearance="@style/LargerTextAppearance"
+				android:layout_marginBottom = "20dp"
+			/>
+		</LinearLayout>
+	</ScrollView>
 </LinearLayout>

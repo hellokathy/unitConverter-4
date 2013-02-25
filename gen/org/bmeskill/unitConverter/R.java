@@ -25,20 +25,21 @@ public final class R {
         public static final int ic_menu_exit=0x7f020002;
     }
     public static final class id {
-        public static final int Go_Button=0x7f080006;
+        public static final int Go_Button=0x7f080007;
         public static final int LinearLayout01=0x7f080000;
-        public static final int SpinnerFrom=0x7f080002;
-        public static final int SpinnerFromDist=0x7f080007;
-        public static final int SpinnerFromTime=0x7f080009;
-        public static final int SpinnerTo=0x7f080004;
-        public static final int SpinnerToDist=0x7f08000a;
-        public static final int SpinnerToTime=0x7f08000c;
-        public static final int TextInput=0x7f080005;
-        public static final int TextViewMid=0x7f080003;
-        public static final int TextViewPer=0x7f080008;
-        public static final int TextViewPer2=0x7f08000b;
-        public static final int TextViewTop=0x7f080001;
-        public static final int menu_exit=0x7f08000d;
+        public static final int SpinnerFrom=0x7f080003;
+        public static final int SpinnerFromDist=0x7f080008;
+        public static final int SpinnerFromTime=0x7f08000a;
+        public static final int SpinnerTo=0x7f080005;
+        public static final int SpinnerToDist=0x7f08000b;
+        public static final int SpinnerToTime=0x7f08000d;
+        public static final int TextInput=0x7f080006;
+        public static final int TextViewMid=0x7f080004;
+        public static final int TextViewPer=0x7f080009;
+        public static final int TextViewPer2=0x7f08000c;
+        public static final int TextViewTop=0x7f080002;
+        public static final int adView=0x7f080001;
+        public static final int menu_exit=0x7f08000e;
     }
     public static final class layout {
         public static final int distancetab=0x7f030000;
@@ -53,23 +54,25 @@ public final class R {
         public static final int exit_menu=0x7f070000;
     }
     public static final class string {
-        public static final int Distance_Button=0x7f05000c;
-        public static final int Exit=0x7f050010;
-        public static final int Fuel_Button=0x7f05000e;
-        public static final int Go_Button=0x7f05000b;
-        public static final int Mass_Button=0x7f05000f;
-        public static final int Speed_Button=0x7f05000d;
-        public static final int app_name=0x7f050001;
-        public static final int default_input=0x7f050009;
-        public static final int default_output=0x7f05000a;
-        public static final int hello=0x7f050000;
-        public static final int text_distance=0x7f050007;
-        public static final int text_from_prompt=0x7f050004;
-        public static final int text_mid_line=0x7f050003;
-        public static final int text_per_line=0x7f050005;
-        public static final int text_time=0x7f050008;
-        public static final int text_to_prompt=0x7f050006;
-        public static final int text_top_line=0x7f050002;
+        public static final int Distance_Button=0x7f05000e;
+        public static final int Exit=0x7f050012;
+        public static final int Fuel_Button=0x7f050010;
+        public static final int Go_Button=0x7f05000d;
+        public static final int Mass_Button=0x7f050011;
+        public static final int Speed_Button=0x7f05000f;
+        public static final int ad_ID=0x7f050000;
+        public static final int app_name=0x7f050003;
+        public static final int default_input=0x7f05000b;
+        public static final int default_output=0x7f05000c;
+        public static final int hello=0x7f050002;
+        public static final int test_Devices=0x7f050001;
+        public static final int text_distance=0x7f050009;
+        public static final int text_from_prompt=0x7f050006;
+        public static final int text_mid_line=0x7f050005;
+        public static final int text_per_line=0x7f050007;
+        public static final int text_time=0x7f05000a;
+        public static final int text_to_prompt=0x7f050008;
+        public static final int text_top_line=0x7f050004;
     }
     public static final class style {
         /** 

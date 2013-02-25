@@ -1,121 +1,141 @@
 <?xml version="1.0" encoding="utf-8"?>
-<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
 	android:orientation="vertical"
 	android:id="@+id/LinearLayout01" 
 	android:layout_width="fill_parent" 
-	android:layout_height="fill_parent"
-	android:layout_marginBottom = "30dp"
-	android:stretchColumns="1">
+	android:layout_height="fill_parent">
 	
-	<TableRow android:gravity="center_vertical|center_horizontal"
-	    android:layout_marginBottom = "20dp">
-	<TextView 
-		android:layout_span="3" 
-		android:id="@+id/TextViewTop"
-		android:gravity="center_vertical|center_horizontal"
+    <com.google.ads.AdView android:id="@+id/adView"
+		android:layout_width="wrap_content"
 		android:layout_height="wrap_content"
-		android:layout_width="fill_parent"
-		android:text="@string/text_top_line"
-		android:textAppearance="@style/LargerTextAppearance"
-	/>
-	</TableRow>
+		ads:adUnitId="@string/ad_ID"
+		ads:adSize="BANNER"
+		ads:testDevices="@string/test_Devices"
+		ads:loadAdOnCreate="true"/>
 	
-	<TableRow android:gravity="center_vertical|center_horizontal"
-	    android:layout_marginBottom = "20dp">
-		<Spinner 
-			android:id="@+id/SpinnerFromDist"
-			android:layout_width="fill_parent"
-			android:drawSelectorOnTop="true"
-			android:prompt="@string/text_distance" 
-			android:layout_height="wrap_content"
-		/>
-		
-		<TextView 
-			android:id="@+id/TextViewPer"
-			android:gravity="center_vertical|center_horizontal"
-			android:layout_height="wrap_content"
-			android:layout_width="fill_parent"
-			android:text="@string/text_per_line"
-			android:textAppearance="@style/MyTextAppearance"
-		/>
-		
-		<Spinner 
-			android:id="@+id/SpinnerFromTime"
-			android:layout_width="fill_parent"
-			android:drawSelectorOnTop="true"
-			android:prompt="@string/text_time" 
-			android:layout_height="wrap_content"
-		/>
-	</TableRow>
-	
-	<TableRow android:gravity="center_vertical|center_horizontal"
-	    android:layout_marginBottom = "20dp">
-	<TextView 
-		android:layout_span="3" 
-		android:id="@+id/TextViewMid"
-		android:gravity="center_vertical|center_horizontal" 
+    <ScrollView
+        android:orientation="vertical"
 		android:layout_width="fill_parent" 
-		android:text="@string/text_mid_line"
-		android:layout_height="wrap_content"
-		android:textAppearance="@style/LargerTextAppearance"
-	/>
-	</TableRow>
-	
-	<TableRow android:gravity="center_vertical|center_horizontal"
-	    android:layout_marginBottom = "20dp">
-		<Spinner 
-			android:id="@+id/SpinnerToDist"
-			android:gravity="left"
-			android:layout_width="wrap_content"
-			android:drawSelectorOnTop="true"
-			android:prompt="@string/text_distance" 
-			android:layout_height="wrap_content"
-		/>
+		android:layout_height="fill_parent">
 		
-		<TextView 
-			android:id="@+id/TextViewPer2"
-			android:gravity="center"
+		<TableLayout android:orientation="vertical"
+			android:layout_width="fill_parent" 
 			android:layout_height="wrap_content"
-			android:layout_width="wrap_content"
-			android:text="@string/text_per_line"
-			android:textAppearance="@style/MyTextAppearance"
-		/>
-		
-		<Spinner 
-			android:id="@+id/SpinnerToTime"
-			android:gravity="right"
-			android:layout_width="fill_parent"
-			android:drawSelectorOnTop="true"
-			android:prompt="@string/text_time" 
-			android:layout_height="wrap_content"
-		/>
-	</TableRow>
-	
-	<TableRow android:gravity="center_vertical|center_horizontal"
-	    android:layout_marginBottom = "20dp">
-	<EditText 
-		android:layout_span="3" 
-		android:id="@+id/TextInput"
-		android:inputType="numberDecimal"
-		android:maxLength="10"
-		android:gravity="center_vertical|center_horizontal"
-		android:layout_height="wrap_content"
-		android:layout_width="fill_parent"
-		android:textAppearance="@style/LargerTextAppearance"
-	/>
-	</TableRow>
-	
-	<TableRow android:gravity="center_vertical|center_horizontal"
-	    android:layout_marginBottom = "20dp">
-	<Button 
-		android:layout_span="3" 
-		android:text="@string/Go_Button"
-		android:gravity="center_vertical|center_horizontal"
-		android:id="@+id/Go_Button"
-		android:layout_width="fill_parent"
-		android:layout_height="wrap_content"
-		android:textAppearance="@style/LargerTextAppearance"
-	/>
-	</TableRow>
-
-</TableLayout>
+			android:layout_marginBottom = "30dp"
+			android:stretchColumns="1">
+			
+			<TableRow android:gravity="center_vertical|center_horizontal"
+			    android:layout_marginBottom = "20dp">
+			<TextView 
+				android:layout_span="3" 
+				android:id="@+id/TextViewTop"
+				android:gravity="center_vertical|center_horizontal"
+				android:layout_height="wrap_content"
+				android:layout_width="fill_parent"
+				android:text="@string/text_top_line"
+				android:textAppearance="@style/LargerTextAppearance"
+			/>
+			</TableRow>
+			
+			<TableRow android:gravity="center_vertical|center_horizontal"
+			    android:layout_marginBottom = "20dp"
+			    android:layout_width="fill_parent">
+				<Spinner 
+					android:id="@+id/SpinnerFromDist"
+					android:layout_width="fill_parent"
+					android:drawSelectorOnTop="true"
+					android:prompt="@string/text_distance" 
+					android:layout_height="wrap_content"
+				/>
+				
+				<TextView 
+					android:id="@+id/TextViewPer"
+					android:gravity="center_vertical|center_horizontal"
+					android:layout_height="wrap_content"
+					android:layout_width="fill_parent"
+					android:text="@string/text_per_line"
+					android:textAppearance="@style/MyTextAppearance"
+				/>
+				
+				<Spinner 
+					android:id="@+id/SpinnerFromTime"
+					android:layout_width="fill_parent"
+					android:drawSelectorOnTop="true"
+					android:prompt="@string/text_time" 
+					android:layout_height="wrap_content"
+				/>
+			</TableRow>
+			
+			<TableRow android:gravity="center_vertical|center_horizontal"
+			    android:layout_marginBottom = "20dp">
+			<TextView 
+				android:layout_span="3" 
+				android:id="@+id/TextViewMid"
+				android:gravity="center_vertical|center_horizontal" 
+				android:layout_width="fill_parent" 
+				android:text="@string/text_mid_line"
+				android:layout_height="wrap_content"
+				android:textAppearance="@style/LargerTextAppearance"
+			/>
+			</TableRow>
+			
+			<TableRow android:gravity="center_vertical|center_horizontal"
+			    android:layout_marginBottom = "20dp">
+				<Spinner 
+					android:id="@+id/SpinnerToDist"
+					android:gravity="left"
+					android:layout_width="wrap_content"
+					android:drawSelectorOnTop="true"
+					android:prompt="@string/text_distance" 
+					android:layout_height="wrap_content"
+				/>
+				
+				<TextView 
+					android:id="@+id/TextViewPer2"
+					android:gravity="center"
+					android:layout_height="wrap_content"
+					android:layout_width="wrap_content"
+					android:text="@string/text_per_line"
+					android:textAppearance="@style/MyTextAppearance"
+				/>
+				
+				<Spinner 
+					android:id="@+id/SpinnerToTime"
+					android:gravity="right"
+					android:layout_width="fill_parent"
+					android:drawSelectorOnTop="true"
+					android:prompt="@string/text_time" 
+					android:layout_height="wrap_content"
+				/>
+			</TableRow>
+			
+			<TableRow android:gravity="center_vertical|center_horizontal"
+			    android:layout_marginBottom = "20dp">
+			<EditText 
+				android:layout_span="3" 
+				android:id="@+id/TextInput"
+				android:inputType="numberDecimal"
+				android:maxLength="10"
+				android:gravity="center_vertical|center_horizontal"
+				android:layout_height="wrap_content"
+				android:layout_width="fill_parent"
+				android:textAppearance="@style/LargerTextAppearance"
+			/>
+			</TableRow>
+			
+			<TableRow android:gravity="center_vertical|center_horizontal"
+			    android:layout_marginBottom = "20dp">
+			<Button 
+				android:layout_span="3" 
+				android:text="@string/Go_Button"
+				android:gravity="center_vertical|center_horizontal"
+				android:id="@+id/Go_Button"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:textAppearance="@style/LargerTextAppearance"
+			/>
+			</TableRow>
+		</TableLayout>
+	</ScrollView>
+</LinearLayout>

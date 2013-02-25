@@ -17,6 +17,7 @@ public class LandingPage extends ListActivity {
 		super.onCreate(savedInstanceState);
 	    setContentView(R.layout.main);
 	    setListAdapter(new ArrayAdapter<String>(this, R.layout.list_item, getResources().getStringArray(R.array.conversion_types)));
+
 	    displayNotice();
 	}
 	
